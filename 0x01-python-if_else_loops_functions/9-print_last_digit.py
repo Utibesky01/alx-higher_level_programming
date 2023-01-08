@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-for i in range(122, 96, -1):
-    if (i % 2 == 0):
-        print("{}".format(chr(i)), end='')
+def print_last_digit(number):
+    if number < 0:
+        remainder = abs(number) % 10
     else:
-        print("{}".format(chr(i - 32)), end='')
+        remainder = number % 10
+    print("{}".format(remainder), end='')
+    return (remainder)
